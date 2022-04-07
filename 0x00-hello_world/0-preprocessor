@@ -1,2 +1,2 @@
-README.md
-This repository introduces C programming language
+#!/bin/bash
+gcc $CFILE -E -o c
