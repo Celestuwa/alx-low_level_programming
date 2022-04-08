@@ -2,16 +2,18 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry point
+ * main - main bloc
+ * Description: Get a random number and print the number
+ * and if it is positive, negative, or zero
  *
- * Return: Always 0 (Success)
+ * Return: 0.
  */
 int main(void)
 {
-int n;
+	int n;
 
-srand(time(0))
-n = rand() - RAND_MAX / 2;
+	srand(time(0))
+	n = rand() - RAND_MAX / 2;
 /* your code goes there */
 if (n > 0)
 {
