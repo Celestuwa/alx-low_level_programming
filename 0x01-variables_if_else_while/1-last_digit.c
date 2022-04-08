@@ -1,35 +1,51 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 #include <time.h>
 
+#include <stdlib.h>
+
 /**
-* main - Entry point
-*
-* Description:Print a number  and it is last digit along with wether it is 
-* Last digit is 0, greater than 5, or less than 6 and not zero
-*/
+ *
+ *  * main - main block
+ *
+ *   * Description: Get a random number and check its last digit, compare it with 5
+ *
+ *    * Return: 0
+ *
+ *     */
+
 int main(void)
-{
-int n, 
-int s,    
 
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-s = n % 10;
+{
 
-if (s > 5)
-{
-printf("Last digit of %d is %d and is greater than 5\n", n,s);
-}
-if (num == 0)
-else if (s == 0)
-{
-printf("Last digit of %d is %d and is 0\n", n, s);
-}
-if (num < 6)
-else if (s < 6)
-{
-printf("Last digit of %d is %d and is less than 6 and not 0\n", n, s);
-}
-return (0);
+		int n;
+
+			int last;
+
+
+
+				srand(time(0));
+
+					n = rand() - RAND_MAX / 2;
+
+						last = n % 10;
+
+
+
+							if (last > 5)
+
+										printf("Last digit of %i is %i and is greater than 5\n", n, last);
+
+								else if (last == 0)
+
+											printf("Last digit of %i is %i and is 0\n", n, last);
+
+									else if (last < 6)
+
+												printf("Last digit of %i is %i and is less than 6 and not 0\n", n, last);
+
+
+
+										return (0);
+
 }
