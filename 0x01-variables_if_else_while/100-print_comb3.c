@@ -8,6 +8,7 @@
  * Print only the smallest combinationof two digits
  * Numbers should be printed in ascending order, with two digits
  * Numbers must be separated by ,, followed by a space
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -28,6 +29,8 @@ putchart(' ')
 }
 }
 }
+
 putchar('\n');
+
 return (0);
 }
