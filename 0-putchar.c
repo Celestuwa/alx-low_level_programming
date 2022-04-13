@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - Entry point
  *
@@ -16,6 +17,5 @@ putchar('h');
 putchar('a');
 putchar('r');
 putchar('\n');
-
 return (0);
 }
