@@ -1,12 +1,11 @@
-<<<<<<< HEAD
-
-=======
 #include "main.h"
+
 /**
  * _atoi - int
  * @s: pointer
  * Return: int.
  */
+
 int _atoi(char *s)
 {
 	int i;
@@ -30,4 +29,3 @@ int _atoi(char *s)
 	res = sig * res;
 	return (res);
 }
->>>>>>> ca7885c73b9f4c2887742590d692d7e5bbd2399b
