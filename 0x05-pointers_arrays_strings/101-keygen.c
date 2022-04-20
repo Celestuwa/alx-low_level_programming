@@ -1,6 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-<<<<<<< HEAD
-=======
+/**
+ * main - program that generates random valid
+ * passwords for the program 101-crackme
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int myrand;
@@ -18,4 +25,3 @@ int main(void)
 
 	return (0);
 }
->>>>>>> a44a0a8f420de1ebde92fa08ced02019c913f03f
