@@ -7,7 +7,6 @@
  * @argv: string
  * Return: int
  */
-
 int main(int argc, char *argv[])
 {
 int i, n, s, ch = 0;
