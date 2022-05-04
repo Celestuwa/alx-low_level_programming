@@ -3,7 +3,7 @@
 
 /**
  * main - print the minimum number of coins to make change
- * main - print the minimum number of coins to make change
+ * @argc: int
  * @argv: string
  * Return: int
  */
