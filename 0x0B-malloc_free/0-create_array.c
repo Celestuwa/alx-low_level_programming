@@ -1,14 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-
 /**
  * create_array - allocate space for an array
- * @size:unssigned int
+ * @size:unsigned int
  * @c:char
  * Return:char
  */
-
 char *create_array(unsigned int size, char c)
 {
 
