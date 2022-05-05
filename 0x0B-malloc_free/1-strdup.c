@@ -1,35 +1,43 @@
-#include "main.h"
 #include <stdlib.h>
 
 /**
- * _strdup - Returns a pointer to a newly-allocated space in memory
- * containing a copy of the string given as parameter.
- * @str:string
+ * string_nconcat - Concatenates two strings using at
+ * most an inputted number of bytes.
+ * @s1: The first string.
+ * @s2: The second string.
+ * @n: The maximum number of bytes of s2 to concatenate to s1.
  *
- * Return:char
+ * Return: If the function fails - NULL.
+ * Otherwise - a pointer to the concatenated space in memory.
  */
-char *_strdup(char *str)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *s;
-int i, l = 0;
+char *concat;
+unsigned int len = n, index;
 
-if (str == NULL)
+if (s1 == NULL)
+s1 = "";
+
+if (s2 == NULL)
+s2 = "";
+
+for (index = 0; s1[index]; index++)
+len++;
+
+concat = malloc(sizeof(char) * (len + 1));
+
+if (concat == NULL)
 return (NULL);
 
-for (i = 0; str[i]; i++)
-l++;
+len = 0;
 
-s = malloc(sizeof(char) * (l + 1));
+for (index = 0; s1[index]; index++)
+concat[len++] = s1[index];
 
-if (s == NULL)
-{
-return (NULL);
+for (index = 0; s2[index] && index < n; index++)
+concat[len++] = s2[index];
+
+concat[len] = '\0';
+
+return (concat);
 }
-
-for (j = 0; j <= i; j++)
-{
-s[j] = str[j];
-}
-return (s);
-}
-
