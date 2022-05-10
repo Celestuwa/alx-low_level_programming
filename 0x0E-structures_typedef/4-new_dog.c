@@ -26,7 +26,6 @@ return (len);
  * terminating null byte, to a buffer pointed to by dest.
  * @dest: The buffer storing the string copy.
  * @src: The source string.
- * 
  * Return: The pointer to dest.
  */
 char *_strcopy(char *dest, char *src)
