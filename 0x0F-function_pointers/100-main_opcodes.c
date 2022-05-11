@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- * main - Prints the opcodes of itself.
- * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
- *
- * Return: Always 0.
+ * main - prints the opcodes of itself
+ * @argc: the number of args
+ * @argv: arg vector
+ * Return: Always 0
  */
+
 int main(int argc, char *argv[])
 {
 int bytes, index;
@@ -16,8 +16,8 @@ unsigned char opcode;
 
 if (argc != 2)
 {
-printf("Error\n");
-exit(1);
+ printf("Error\n");
+ exit(1);
 }
 
 bytes = atoi(argv[1]);
@@ -37,7 +37,7 @@ if (index == bytes - 1)
 continue;
 printf(" ");
 
-addres++;
+address++;
 }
 
 printf("\n");
