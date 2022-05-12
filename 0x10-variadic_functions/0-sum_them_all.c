@@ -1,6 +1,9 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdio.h>
+
 /**
- * sum_them_all - sum of variadic variable
+ * sum_them_all - Returns the sum of all its paramters.
  * @n:const
  * Return:int
  */
@@ -14,6 +17,7 @@ if (n == 0)
 {
 return (0);
 }
+
 if (n == 0)
 {
 return (0);
