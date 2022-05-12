@@ -16,8 +16,8 @@ unsigned char opcode;
 
 if (argc != 2)
 {
- printf("Error\n");
- exit(1);
+printf("Error\n");
+exit(1);
 }
 
 bytes = atoi(argv[1]);
@@ -36,7 +36,6 @@ printf("%.2x", opcode);
 if (index == bytes - 1)
 continue;
 printf(" ");
-
 address++;
 }
 
