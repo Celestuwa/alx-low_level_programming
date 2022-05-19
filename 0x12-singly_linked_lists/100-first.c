@@ -1,10 +1,14 @@
 #include <stdio.h>
+
+void printfirst(void) __attribute__ ((constructor));
+
 /**
- * void __attribute__((constructor)) hare(void);
- * main function is executed.
+ * printfirst - print before main
+ *
+ * Return: void
  */
 
-void hare(void)
+void printfirst(void)
 {
 printf("You're beat! and yet, you must allow,\n"
 "I bore my house upon my back!\n");
