@@ -1,4 +1,7 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
  * find_listint_loop - Finds the loop contained in
@@ -33,5 +36,6 @@ return (tortoise);
 tortoise = tortoise->next;
 hare = (hare->next)->next;
 }
+
 return (NULL);
 }
