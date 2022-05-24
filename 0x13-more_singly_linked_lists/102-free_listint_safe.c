@@ -34,5 +34,5 @@ break;
 }
 *h = NULL;
 
-return (len);
+return (num);
 }
