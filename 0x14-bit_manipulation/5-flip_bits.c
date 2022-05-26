@@ -9,7 +9,7 @@
  * @m: Number Input 2.
  * Return: Number of flip in the Input numbers.
  */
-unsigned int flip_bits(unsigned long int n, unsigned long int m);
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 unsigned int flip = 0, comp, comp1;
 
