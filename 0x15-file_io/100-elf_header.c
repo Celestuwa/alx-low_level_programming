@@ -1,4 +1,9 @@
 #include "main.h"
+#include <elf.h>
+#include <fcntl.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 /**
  * check_elf - Checks if a file is an ELF file.
@@ -220,8 +225,8 @@ e_entry = (e_entry << 16) | (e_entry >> 16);
 }
 
 if (e_ident[EI_CLASS] == ELFCLASS32)
+{
 printf("%#x\n", (unsigned int)e_entry);
-
 else
 printf("%#lx\n", e_entry);
 }
